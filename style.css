@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --yellow: #FDAE16;
+    --dark-red: #780000;
+    --red: #B72424;
+    --cream: #F7EEE1;
+    --black: #000000;
+    --white: #FFFFFF;
+
+    --heading-font: 'Fredericka the Great';
+    --body-font: 'Jost';
+    --titles-font: 'Spicy Rice';
+
+    --normal-font: 1rem;
+    --aboveNormal-font: 1.25rem;
+    --bigger-font: 2rem;
+
+    --regular: 400;
+    --bold: 500;
+    --bolder: 600;
+    --boldest: 700;
+}
+
+body, button {
+    background-color: var(--cream);
+    font-family: var(--body-font), 'Times';
+    font-size: var(--normal-font);
+    font-weight: var(--regular);
+}
+
+/** #############
+    HEADER/NAV
+################ **/
+header {
+    background-color: var(--dark-red);
+}
+nav {
+    padding: 1.5em;
+    font-weight: var(--bolder);
+    color: var(--cream);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.header--title {
+    display: flex;
+    align-items: center;
+}
+
+.nav--list {
+    list-style: none;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav--list li {
+    margin-left: 1.5em;
+}
+.nav--list a {
+    color: var(--cream);
+    text-decoration: none;
+}
+
+.resume--download {
+    background-color: var(--yellow);
+    font-weight: var(--bolder);
+    border: none;
+    padding: 0.25em 0.75em ;
+    border-radius: 7px;
+}
+.resume--download:hover {
+    cursor: pointer;
+}
+
+/** #############
+    HERO
+################ **/
+.hero {
+    background-color: var(--dark-red);
+}
+
+/** #############
+    PROJECTS
+################ **/
+.projects {
+    background-color: var(--dark-red);
+}
+
+/** #############
+    EXPERIENCE
+################ **/
+
+/** #############
+    FOOTER
+################ **/
+
+/** #############
+    MEDIA Q
+################ **/
+@media (max-width:700px) {
+    /** #############
+        HEADER/NAV
+    ################ **/
+    nav {
+        padding: 1.5em;
+        padding-top: 3em;
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header--title img {
+        display: none;
+    }
+    .header--title p {
+        font-size: var(--aboveNormal-font);
+    }
+
+    .nav--list {
+        margin-top: 0.5em;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav--list li:nth-child(-n+3) {
+        display: none;
+    }
+    .nav--list li {
+        margin-left: 0;
+        margin-bottom: 1em;
+    }
+
+    .resume--download {
+        background-color: var(--yellow);
+        font-weight: var(--boldest);
+        border: none;
+        padding: 0.25em 2em ;
+        border-radius: 7px;
+    }
+}
+
