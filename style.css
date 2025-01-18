@@ -70,10 +70,12 @@ nav {
 
 .resume--download {
     background-color: var(--yellow);
+    color: var(--dark-red);
     font-weight: var(--bolder);
     border: none;
     padding: 0.25em 0.75em ;
     border-radius: 7px;
+    box-shadow: 1px 1px 15px 4px var(--red);
 }
 .resume--download:hover {
     cursor: pointer;
@@ -124,7 +126,7 @@ nav {
     }
 
     .nav--list {
-        margin-top: 0.5em;
+        margin-top: 1em;
 
         display: flex;
         flex-direction: column;
@@ -140,9 +142,9 @@ nav {
     }
 
     .resume--download {
-        background-color: var(--yellow);
         font-weight: var(--boldest);
         border: none;
+        text-align: center;
         padding: 0.25em 2em ;
         border-radius: 7px;
     }
