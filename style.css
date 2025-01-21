@@ -31,6 +31,7 @@ body, button {
     font-family: var(--body-font), 'Times';
     font-size: var(--normal-font);
     font-weight: var(--regular);
+    color: var(--cream);
 }
 
 /** #############
@@ -38,6 +39,7 @@ body, button {
 ################ **/
 header {
     background-color: var(--dark-red);
+    padding-top: 0.5em;
 }
 nav {
     padding: 1.5em;
@@ -51,6 +53,10 @@ nav {
 .header--title {
     display: flex;
     align-items: center;
+}
+.header--title img {
+    width: 25px;
+    margin-right: 0.25em;
 }
 
 .nav--list {
@@ -86,6 +92,113 @@ nav {
 ################ **/
 .hero {
     background-color: var(--dark-red);
+    text-align: center;
+    padding-top: 1.5em;
+
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(9, 1fr);
+
+    min-width: 0;
+    min-height: 0;
+
+    justify-content: center;
+}
+
+.hero--title {
+    font-family: var(--heading-font);
+    text-transform: uppercase;
+    font-size: 4.75rem;
+    letter-spacing: 0.5em;
+
+    grid-row: 1/12;
+    grid-column: 2/9;
+}
+.hero--title h1 {
+    margin-bottom: 20px;
+}
+.hero--title h1:last-child {
+    z-index: 1;
+    position: relative;
+}
+
+.hero--image img {
+    width: 450px;
+    z-index: 1;
+    position: relative;
+}
+.hero--image {
+    grid-row: 3/9;
+    grid-column: 2/5;
+}
+
+.hero--checkMeOut {
+    background-color: var(--dark-red);
+    width: 250px;
+    grid-row: 5/7;
+    grid-column: 6/8;
+    box-shadow: 0px 0px 10px 0px rgb(131, 30, 30);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero--checkMeOut p {
+    font-weight: var(--bolder);
+    font-size: var(--aboveNormal-font);
+    font-style: italic;
+    margin-bottom: 0.5em;
+}
+.hero--checkMeOut button {
+    background-color: var(--yellow);
+    color: var(--dark-red);
+    border-radius: 10px;
+    border: none;
+    padding: 0.25em 1em;
+    font-weight: var(--boldest);
+}
+
+.hero--black--color {
+    background-color: var(--black);
+    height: 160px;
+
+    grid-row: 8/10;
+    grid-column: 1/10;
+
+    display: flex;
+    align-items: end;
+    z-index: 0;
+    position: relative;
+
+}
+
+.hero--divider {
+    background-color: var(--yellow);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    grid-row: 9/11;
+    grid-column: 5/6;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1;
+    position: relative;
+}
+.hero--divider p {
+    font-weight: 800;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.hero--cream--color {
+    background-color: var(--cream);
+    grid-row: 10/12;
+    grid-column: 1/10;
 }
 
 /** #############
