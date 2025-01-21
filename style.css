@@ -55,7 +55,7 @@ nav {
     align-items: center;
 }
 .header--title img {
-    width: 25px;
+    width: 30px;
     margin-right: 0.25em;
 }
 
@@ -85,6 +85,8 @@ nav {
 }
 .resume--download:hover {
     cursor: pointer;
+    box-shadow: 0px 0px 25px 10px rgb(172, 47, 47);
+    transform: scale(1.05,1.05);
 }
 
 /** #############
@@ -123,13 +125,17 @@ nav {
 }
 
 .hero--image img {
-    width: 450px;
+    width: 425px;
     z-index: 1;
     position: relative;
 }
 .hero--image {
     grid-row: 3/9;
     grid-column: 2/5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero--checkMeOut {
@@ -157,6 +163,11 @@ nav {
     border: none;
     padding: 0.25em 1em;
     font-weight: var(--boldest);
+}
+.hero--checkMeOut button:hover {
+    box-shadow: 0px 0px 25px 10px rgb(172, 47, 47);
+    transform: scale(1.05,1.05);
+    cursor: pointer;
 }
 
 .hero--black--color {
@@ -189,10 +200,16 @@ nav {
     position: relative;
 }
 .hero--divider p {
-    font-weight: 800;
+    font-weight: 600;
     line-height: 20px;
     text-transform: uppercase;
     color: var(--black);
+}
+.hero--divider a {
+    text-decoration: none;
+}
+.hero--divider a:hover {
+    transform: scale(1.1);
 }
 
 .hero--cream--color {
