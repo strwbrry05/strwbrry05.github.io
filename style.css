@@ -218,6 +218,7 @@ nav {
 }
 .hero--divider a:hover {
     transform: scale(1.1);
+    transition: 0.2s ease-in;
 }
 
 .hero--cream--color {
@@ -271,6 +272,8 @@ nav {
     font-weight: var(--boldest);
 }
 .aboutMe--left--email:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease-in;
     cursor: pointer;
 }
 
@@ -352,6 +355,12 @@ nav {
 }
 .card--subtitle {
     margin-bottom: 0.75em;
+    margin-top: 0.5em;
+    background-color: var(--yellow);
+    opacity: 85%;
+    color: var(--dark-red);
+    border-radius: 7px;
+    padding: 0.25em;
 }
 .desc--list {
     margin-bottom: 0.75em;
@@ -369,10 +378,13 @@ nav {
 
 .skill--decor {
     font-size: 0.8rem;
-    border: 1px solid var(--cream);
+    border: 1px solid var(--yellow);
     border-radius: 10px;
     padding: 0.5em;
     margin-right: 0.25em;
+}
+.skill--decor:hover {
+    border: 2px solid var(--yellow);
 }
 
 .exp--title {
@@ -408,8 +420,51 @@ nav {
 /** #############
     PROJECTS
 ################ **/
-.projects {
+#projects {
     background-color: var(--cream);
+    color: var(--black);
+    padding: 5em;
+}
+
+.projects--div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    column-gap: 2em;
+    row-gap: 2em;
+}
+
+.projects--title {
+    font-family: var(--titles-font);
+    font-weight: var(--regular);
+    font-size: 3rem;
+    margin-bottom: 0.5em;
+}
+.project--date {
+    margin-bottom: 0.5em;
+}
+
+.project {
+    border: 2px solid var(--black);
+    width: 390px;
+    height: 500px;
+    padding: 1em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project--img {
+    width: 350px;
+}
+.project--img:hover {
+    transform: scale(1.03);
+    transition: 0.25s ease-in;
+}
+.project--blurb {
+    margin-top: 0.5em;
+    margin-bottom: 0.75em;
 }
 
 /** #############
@@ -420,7 +475,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1em 0;
+    padding: 2em 0;
 }
 .footer--title {
     margin-left: 5em;
