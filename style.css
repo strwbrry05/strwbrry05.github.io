@@ -489,6 +489,11 @@ footer {
     margin-left: 2em;
 }
 
+.contacts--list a {
+    color: var(--cream);
+    text-decoration: none;
+}
+
 /** #############
     MEDIA Q
 ################ **/
