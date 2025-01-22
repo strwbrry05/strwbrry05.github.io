@@ -190,7 +190,6 @@ nav {
     align-items: end;
     z-index: 0;
     position: relative;
-
 }
 
 .hero--divider {
@@ -273,12 +272,112 @@ nav {
     align-items: center;
 
 }
+/** #############
+    TECHNOLOGIES
+################ **/
+#technologies {
+    color: var(--black);
+    font-weight: var(--bold);
+    text-align: center;
+    padding-bottom: 3em;
+}
+
+.tech--title {
+    font-size: var(--bigger-font);
+    font-family: var(--titles-font);
+    font-weight: var(--regular);
+    margin-bottom: 0.25em;
+}
+
+.tech--list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+.tech--list li {
+    margin-left: 1em;
+}
 
 /** #############
     EXPERIENCE
 ################ **/
 #experience {
     background-color: var(--dark-red);
+
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8, 1fr);
+    justify-content: center;
+}
+
+
+.exp--card {
+    border: 5px solid var(--cream);
+    padding: 1em;
+    margin: 1em;
+    width: 350px;
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.exp--title {
+    font-size: 4rem;
+    font-family: var(--heading-font);
+}
+.card--date {
+    margin-bottom: 0.5em;
+}
+.card--title {
+    font-size: var(--aboveNormal-font);
+}
+.card--subtitle {
+    margin-bottom: 0.75em;
+}
+.desc--list {
+    margin-bottom: 0.75em;
+}
+.desc--list, .skills--list {
+    list-style: none;
+}
+.desc--list li {
+    margin-bottom: 0.5em;
+}
+
+.card--skills p {
+    line-height: 2.5em;
+}
+
+.skill--decor {
+    font-size: 0.8rem;
+    border: 1px solid var(--cream);
+    border-radius: 10px;
+    padding: 0.5em;
+    margin-right: 0.25em;
+}
+
+.exp--title {
+    grid-row: 2/4;
+    grid-column: 5/8;
+    position: relative;
+    z-index: 0;
+}
+.exp--card:nth-child(1) {
+    grid-row: 3/9;
+    grid-column: 2/4;
+
+}
+.exp--card:nth-child(2) {
+    grid-row: 3/9;
+    grid-column: 4/6;
+
+}
+.exp--card:nth-child(3) {
+    grid-row: 3/9;
+    grid-column: 6/8;
+
 }
 
 /** #############
