@@ -348,6 +348,9 @@ nav {
     flex-direction: column;
     justify-content: center;
 }
+.exp--card {
+    overflow-x: hidden;
+}
 .card--date {
     margin-bottom: 0.5em;
 }
@@ -404,14 +407,16 @@ nav {
     font-weight: 400;
 }
 
-.exp--card {
+.exp--card:last-child {
     grid-row: 4/9;
     grid-column: 6/8;
-
+    width: 325px;
 }
 .exp--card:nth-child(2) {
     grid-row: 2/9;
     grid-column: 2/4;
+    width: 330px;
+
 }
 .exp--card:nth-child(3) {
     grid-row: 3/9;
@@ -620,6 +625,8 @@ footer {
         margin-left: 4em;
         margin-top: 1em;
         justify-self: center;
+        width: 350px;
+
     }
     .exp--card:nth-child(3) {
         grid-row: 2/5;
@@ -627,6 +634,8 @@ footer {
         margin-left: 0em;
         margin-top: 1em;
         justify-self: center;
+        width: 350px;
+
 
     }
     .exp--card:last-child {
