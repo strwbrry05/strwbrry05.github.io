@@ -236,6 +236,7 @@ nav {
     justify-content: center;
     align-items: center;
     padding-bottom: 5em;
+    margin-top: 2em;
 }
 
 .aboutMe--left {
@@ -582,65 +583,12 @@ footer {
         ABOUT
     ################ **/
     #aboutMe {
-        display: flex;
-        color: var(--black);
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 5em;
+        margin-top: 2em;
     }
-
     .aboutMe--left {
-        padding: 1em 4em;
-        margin-left: 4em;
-        margin-top: 2em;
-        width: 600px
-    }
-
-    .aboutMe--left--title {
-        font-family: var(--titles-font);
-        font-weight: var(--bold);
-        font-size: 4.25rem;
-        letter-spacing: -1px;
-        line-height: 60px;
-        margin-bottom: 0.25em;
-    }
-
-    .aboutMe--left--blurb {
-        font-size: var(--aboveNormal-font);
-        font-weight: var(--bold);
-    }
-
-    .aboutMe--left--email {
-        background-color: var(--yellow);
-        padding: 0.5em 5em;
-        border-radius: 10px;
-        text-align: center;
-        margin-top: 1.25em;
-    }
-    .aboutMe--left--email a {
-        color: var(--black);
-        text-decoration: none;
-        font-weight: var(--boldest);
-    }
-    .aboutMe--left--email:hover {
-        transform: scale(1.05);
-        transition: 0.2s ease-in;
-        cursor: pointer;
-    }
-
-    .aboutMe--right {
-        background-color: #780000;
-        width: 500px;
-        margin-left: 3em;
-        margin-top: 2em;
-    }
-
-    .aboutMe--right img {
-        width: 400px;
-        border: 10px solid var(--dark-red);
-        display: flex;
-        align-items: center;
-
+        width: 350px;
+        padding: 1em 0em;
+        margin-left: 1em;
     }
     /** #############
         EXPERIENCE
