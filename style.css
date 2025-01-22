@@ -349,7 +349,7 @@ nav {
     justify-content: center;
 }
 .exp--card {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 .card--date {
     margin-bottom: 0.5em;
@@ -590,8 +590,9 @@ footer {
     ################ **/
     .hero--title {
         grid-row: 1/12;
-        grid-column: 1/9;
+        grid-column: 1/10;
         margin-left: 0.25em;
+        overflow-x: hidden;
     }
     /** #############
         ABOUT
@@ -642,10 +643,11 @@ footer {
         grid-row: 5/8;
         grid-column: 1/5;
 
-        width: 780px;
+        width: 700px;
         height: 300px;
-        margin-top: 4em;
+        margin-top: 2em;
         justify-self: center;
+        align-self: center;
 
 
     }
@@ -880,6 +882,9 @@ footer {
         padding-top: 2em;
         padding-bottom: 5em;
     }
+    .exp--card {
+        margin: 0;
+    }
     .exp--title {
         font-size: 2.25rem;
         margin-left: 0em;
@@ -889,11 +894,14 @@ footer {
     .exp--card:nth-child(2) {
         margin-left: 0em;
         margin-top: -6em;
+        align-self: center;
+        justify-self: center;
     }
     .exp--card:nth-child(3) {
         margin-left: 0em;
         margin-top: 2em;
         height: 550px;
+        justify-self: center;
 
     }
     .exp--card:last-child {
@@ -903,6 +911,7 @@ footer {
         height: 500px;
         margin-left: 0em;
         margin-top: 2em;
+        justify-self: center;
     }
 
     /** #############
