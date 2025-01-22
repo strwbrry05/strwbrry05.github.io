@@ -722,9 +722,6 @@ footer {
 }
 
 @media (max-width:870px) {
-    * {
-        /* overflow-x: hidden; */
-    }
     /** #############
         HEADER/NAV
     ################ **/
