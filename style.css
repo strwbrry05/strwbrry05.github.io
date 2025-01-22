@@ -115,6 +115,7 @@ nav {
     text-transform: uppercase;
     font-size: 4.75rem;
     letter-spacing: 0.5em;
+    overflow-x: hidden;
 
     grid-row: 1/12;
     grid-column: 2/9;
@@ -398,6 +399,7 @@ nav {
     grid-column: 5/8;
     position: relative;
     z-index: 0;
+    overflow-x: hidden;
 }
 .exp--title h2:nth-child(n+2) {
     font-weight: 400;
@@ -783,11 +785,11 @@ footer {
         grid-template-columns: repeat(9, 1fr);
     }
     .hero--title {
-        font-size: 1.5rem;
+        font-size: 3.5rem;
         margin-left: 0em;
         grid-row: 1/12;
         grid-column: 1/10;
-        /* overflow-x: hidden; */
+        overflow-x: hidden;
     }
     .hero--image img {
         min-width: 300px;
