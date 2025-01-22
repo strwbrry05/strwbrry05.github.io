@@ -527,14 +527,6 @@ footer {
 /** #############
     MEDIA Q
 ################ **/
-/* @media (max-width: 1200px) {
-    body {
-        overflow-x: hidden;
-    }
-    .hero--title {
-        font-size: 4rem;
-    }
-} */
 
 @media (max-width:1350px) {
     /** #############
@@ -555,7 +547,7 @@ footer {
     .project:nth-child(1) {
         grid-row: 1/3;
         grid-column: 1/3;
-        margin-left: 10em;
+        margin-left: 8em;
     }
     .project:nth-child(2) {
         grid-row: 1/3;
@@ -565,7 +557,7 @@ footer {
     .project:nth-child(3) {
         grid-row: 3/5;
         grid-column: 1/3;
-        margin-left: 10em;
+        margin-left: 8em;
     }
     .project:nth-child(4) {
         grid-row: 3/5;
@@ -575,21 +567,117 @@ footer {
     .project:nth-child(5) {
         grid-row: 5/7;
         grid-column: 1/3;
-        margin-left: 10em;
+        margin-left: 8em;
     }
     .project:nth-child(6) {
         grid-row: 5/7;
         grid-column: 3/5;
         margin-left: 2em;
     }
-
-
 }
 
 /** 800*/
 @media (max-width:1100px) {
-    body {
-        background-color: pink;
+    /** #############
+        ABOUT
+    ################ **/
+    #aboutMe {
+        display: flex;
+        color: var(--black);
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 5em;
+    }
+
+    .aboutMe--left {
+        padding: 1em 4em;
+        margin-left: 4em;
+        margin-top: 2em;
+        width: 600px
+    }
+
+    .aboutMe--left--title {
+        font-family: var(--titles-font);
+        font-weight: var(--bold);
+        font-size: 4.25rem;
+        letter-spacing: -1px;
+        line-height: 60px;
+        margin-bottom: 0.25em;
+    }
+
+    .aboutMe--left--blurb {
+        font-size: var(--aboveNormal-font);
+        font-weight: var(--bold);
+    }
+
+    .aboutMe--left--email {
+        background-color: var(--yellow);
+        padding: 0.5em 5em;
+        border-radius: 10px;
+        text-align: center;
+        margin-top: 1.25em;
+    }
+    .aboutMe--left--email a {
+        color: var(--black);
+        text-decoration: none;
+        font-weight: var(--boldest);
+    }
+    .aboutMe--left--email:hover {
+        transform: scale(1.05);
+        transition: 0.2s ease-in;
+        cursor: pointer;
+    }
+
+    .aboutMe--right {
+        background-color: #780000;
+        width: 500px;
+        margin-left: 3em;
+        margin-top: 2em;
+    }
+
+    .aboutMe--right img {
+        width: 400px;
+        border: 10px solid var(--dark-red);
+        display: flex;
+        align-items: center;
+
+    }
+    /** #############
+        EXPERIENCE
+    ################ **/
+    #experience {
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: repeat(7, 1fr);
+        justify-content: center;
+        padding-top: 2em;
+    }
+    .exp--title {
+        grid-row: 1/7;
+        grid-column: 2/8;
+        margin-left: 1.5em;
+    }
+    .exp--card:nth-child(2) {
+        grid-row: 2/5;
+        grid-column: 1/3;
+        margin-left: 9em;
+        margin-top: 3em;
+    }
+    .exp--card:nth-child(3) {
+        grid-row: 2/5;
+        grid-column: 3/5;
+        margin-left: 4em;
+        margin-top: 3em;
+    }
+    .exp--card:last-child {
+        grid-row: 5/8;
+        grid-column: 1/5;
+
+        width: 780px;
+        height: 300px;
+        margin-left: 9em;
+        margin-top: 4em;
+
     }
 
 }
