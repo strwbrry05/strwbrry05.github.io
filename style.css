@@ -396,10 +396,9 @@ nav {
     letter-spacing: 7px;
 
     grid-row: 1/4;
-    grid-column: 5/8;
+    grid-column: 5/7;
     position: relative;
     z-index: 0;
-    /* overflow-x: hidden; */
 }
 .exp--title h2:nth-child(n+2) {
     font-weight: 400;
@@ -407,16 +406,16 @@ nav {
 
 .exp--card {
     grid-row: 4/9;
-    grid-column: 6/9;
+    grid-column: 6/8;
 
 }
 .exp--card:nth-child(2) {
     grid-row: 2/9;
-    grid-column: 1/3;
+    grid-column: 2/4;
 }
 .exp--card:nth-child(3) {
     grid-row: 3/9;
-    grid-column: 3/6;
+    grid-column: 4/6;
 
 }
 
@@ -605,27 +604,30 @@ footer {
     ################ **/
     #experience {
         display: grid;
-        grid-template-columns: repeat(8,1fr);
-        grid-template-rows: repeat(7, 1fr);
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(6, 1fr);
         justify-content: center;
         padding-top: 2em;
     }
     .exp--title {
         grid-row: 1/7;
-        grid-column: 2/8;
-        margin-left: 1.5em;
+        grid-column: 2/4;
+        /* margin-left: 1.5em; */
     }
     .exp--card:nth-child(2) {
         grid-row: 2/5;
         grid-column: 1/3;
-        margin-left: 9em;
-        margin-top: 3em;
+        margin-left: 4em;
+        margin-top: 1em;
+        justify-self: center;
     }
     .exp--card:nth-child(3) {
         grid-row: 2/5;
         grid-column: 3/5;
-        margin-left: 4em;
-        margin-top: 3em;
+        margin-left: 0em;
+        margin-top: 1em;
+        justify-self: center;
+
     }
     .exp--card:last-child {
         grid-row: 5/8;
@@ -633,8 +635,9 @@ footer {
 
         width: 780px;
         height: 300px;
-        margin-left: 9em;
         margin-top: 4em;
+        justify-self: center;
+
 
     }
 
