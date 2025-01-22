@@ -258,6 +258,22 @@ nav {
     font-weight: var(--bold);
 }
 
+.aboutMe--left--email {
+    background-color: var(--yellow);
+    padding: 0.5em 5em;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 1.25em;
+}
+.aboutMe--left--email a {
+    color: var(--black);
+    text-decoration: none;
+    font-weight: var(--boldest);
+}
+.aboutMe--left--email:hover {
+    cursor: pointer;
+}
+
 .aboutMe--right {
     background-color: #780000;
     width: 500px;
@@ -279,7 +295,7 @@ nav {
     color: var(--black);
     font-weight: var(--bold);
     text-align: center;
-    padding-bottom: 3em;
+    padding-bottom: 6em;
 }
 
 .tech--title {
@@ -296,7 +312,7 @@ nav {
     align-items: center;
 }
 .tech--list li {
-    margin-left: 1em;
+    margin-right: 1em;
 }
 
 /** #############
@@ -309,11 +325,15 @@ nav {
     grid-template-columns: repeat(8,1fr);
     grid-template-rows: repeat(8, 1fr);
     justify-content: center;
+    padding-top: 2em;
 }
 
 
 .exp--card {
     border: 5px solid var(--cream);
+    background-color: var(--dark-red);
+    position: relative;
+    z-index: 1;
     padding: 1em;
     margin: 1em;
     width: 350px;
@@ -323,15 +343,12 @@ nav {
     flex-direction: column;
     justify-content: center;
 }
-.exp--title {
-    font-size: 4rem;
-    font-family: var(--heading-font);
-}
 .card--date {
     margin-bottom: 0.5em;
 }
 .card--title {
     font-size: var(--aboveNormal-font);
+    text-decoration: underline;
 }
 .card--subtitle {
     margin-bottom: 0.75em;
@@ -359,24 +376,32 @@ nav {
 }
 
 .exp--title {
-    grid-row: 2/4;
+    padding-top: 0.75em;
+    font-size: 4rem;
+    font-family: var(--heading-font);
+    letter-spacing: 7px;
+
+    grid-row: 1/4;
     grid-column: 5/8;
     position: relative;
     z-index: 0;
 }
-.exp--card:nth-child(1) {
-    grid-row: 3/9;
-    grid-column: 2/4;
+.exp--title h2:nth-child(n+2) {
+    font-weight: 400;
+}
+
+.exp--card {
+    grid-row: 4/9;
+    grid-column: 6/8;
 
 }
 .exp--card:nth-child(2) {
-    grid-row: 3/9;
-    grid-column: 4/6;
-
+    grid-row: 2/9;
+    grid-column: 2/4;
 }
 .exp--card:nth-child(3) {
     grid-row: 3/9;
-    grid-column: 6/8;
+    grid-column: 4/6;
 
 }
 
