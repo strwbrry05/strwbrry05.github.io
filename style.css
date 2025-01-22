@@ -423,13 +423,13 @@ nav {
 #projects {
     background-color: var(--cream);
     color: var(--black);
-    padding: 5em;
+    padding: 5em 10em;
+    margin: 0 auto;
 }
 
 .projects--div {
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
     column-gap: 2em;
     row-gap: 2em;
 }
@@ -505,6 +505,14 @@ footer {
         font-size: 4rem;
     }
 } */
+
+/** 800*/
+@media (max-width:1200px) {
+    body {
+        background-color: pink;
+    }
+
+}
 
 @media (max-width:800px) {
     body {
