@@ -898,16 +898,19 @@ footer {
         margin-top: 2em;
         height: 550px;
         justify-self: center;
+        align-self: center;
 
     }
     .exp--card:last-child {
         padding: 1em;
-        margin: 1em;
+        margin: 0em;
         width: 350px;
         height: 500px;
         margin-left: 0em;
         margin-top: 2em;
         justify-self: center;
+        align-self: center;
+
     }
 
     /** #############
