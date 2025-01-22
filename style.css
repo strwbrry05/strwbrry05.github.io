@@ -722,7 +722,7 @@ footer {
 }
 
 @media (max-width:870px) {
-    body {
+    * {
         overflow-x: hidden;
     }
     /** #############
@@ -805,6 +805,9 @@ footer {
         justify-self: center;
         margin-left: 0em;
     }
+    .hero--divider p {
+        overflow: hidden;
+    }
     .hero--black--color {
         height: 200px;
         grid-row: 4/6;
@@ -827,7 +830,11 @@ footer {
     .aboutMe--left {
         padding: 1em 0em;
         margin-left: 0;
-        width: 300px
+        width: 300px;
+        overflow-y: hidden;
+    }
+    .aboutMe--left--title {
+        overflow: hidden;
     }
     .aboutMe--left--email {
         font-size: var(--aboveNormal-font);
@@ -862,6 +869,10 @@ footer {
         margin-left: 0em;
         position: relative;
         z-index: 0;
+    }
+    .card--date, .card--title,
+    .card--subtitle, .card--skills, .card--desc {
+        overflow: hidden;
     }
     .exp--card:nth-child(2) {
         margin-left: 0em;
@@ -900,6 +911,14 @@ footer {
     .project:nth-child(n+1) {
         margin-left: 0em;
     }
+    .project {
+        height: 550px;
+    }
+    .project--date, .project--link, 
+    .project--subtitle, .project--blurb,
+    .project--skills {
+        overflow: hidden;
+    }
 
     /** #############
         FOOTER
@@ -918,11 +937,13 @@ footer {
         margin-right: 0em;
         list-style: none;
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
         margin-top: 1em;
     }
-    .contacts--list li:nth-child(n+2) {
-        margin-right: 0.5em;
+    .contacts--list li {
+        margin-bottom: 0.5em;
     }
 }
 
