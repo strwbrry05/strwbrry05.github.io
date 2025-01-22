@@ -723,7 +723,7 @@ footer {
 
 @media (max-width:870px) {
     * {
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
     }
     /** #############
         HEADER/NAV
@@ -765,6 +765,17 @@ footer {
         text-align: center;
         padding: 0.25em 2em ;
         border-radius: 7px;
+        overflow: hidden;
+
+    }
+    .resume--download button {
+        overflow: hidden;
+    }
+    .resume--download:hover {
+        cursor: pointer;
+        box-shadow: 0px 0px 25px 10px rgb(172, 47, 47);
+        overflow: hidden;
+        transform: 0;
     }
     /** #############
         HERO
@@ -779,6 +790,7 @@ footer {
         margin-left: 0em;
         grid-row: 1/12;
         grid-column: 1/10;
+        overflow-x: hidden;
     }
     .hero--image img {
         min-width: 300px;
@@ -805,9 +817,6 @@ footer {
         justify-self: center;
         margin-left: 0em;
     }
-    .hero--divider p {
-        overflow: hidden;
-    }
     .hero--black--color {
         height: 200px;
         grid-row: 4/6;
@@ -831,10 +840,6 @@ footer {
         padding: 1em 0em;
         margin-left: 0;
         width: 300px;
-        overflow-y: hidden;
-    }
-    .aboutMe--left--title {
-        overflow: hidden;
     }
     .aboutMe--left--email {
         font-size: var(--aboveNormal-font);
@@ -870,10 +875,6 @@ footer {
         position: relative;
         z-index: 0;
     }
-    .card--date, .card--title,
-    .card--subtitle, .card--skills, .card--desc {
-        overflow: hidden;
-    }
     .exp--card:nth-child(2) {
         margin-left: 0em;
         margin-top: -7em;
@@ -881,6 +882,8 @@ footer {
     .exp--card:nth-child(3) {
         margin-left: 0em;
         margin-top: 2em;
+        height: 550px;
+
     }
     .exp--card:last-child {
         padding: 1em;
@@ -914,11 +917,6 @@ footer {
     .project {
         height: 550px;
     }
-    .project--date, .project--link, 
-    .project--subtitle, .project--blurb,
-    .project--skills {
-        overflow: hidden;
-    }
 
     /** #############
         FOOTER
@@ -944,6 +942,8 @@ footer {
     }
     .contacts--list li {
         margin-bottom: 0.5em;
+        margin-left: 0;
     }
+
 }
 
