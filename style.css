@@ -866,6 +866,7 @@ footer {
     #projects {
         padding: 3em 0em;
         text-align: center;
+        transform: scale(0.85);
     }
     .projects--div {
         display: flex;
