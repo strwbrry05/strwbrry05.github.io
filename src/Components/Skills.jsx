@@ -5,7 +5,7 @@ import css from "../assets/bookCss.png";
 import html from "../assets/bookHtml.png";
 import figma from "../assets/bookFigma.png";
 import react from "../assets/bookReact.png";
-import sql from "../assets/bookSql.png";
+// import sql from "../assets/bookSql.png";
 import tailwind from "../assets/bookTailwind.png";
 import git from "../assets/bookGit.png";
 
