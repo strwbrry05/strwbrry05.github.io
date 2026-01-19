@@ -1,5 +1,5 @@
-import js from "../assets/bookJs.png";
-import node from "../assets/bookNode.png";
+import js from "./../assets/bookJs.png";
+import node from "./../assets/bookNode.png";
 import css from "../assets/bookCss.png";
 import html from "../assets/bookHtml.png";
 import figma from "../assets/bookFigma.png";
