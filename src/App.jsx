@@ -10,7 +10,7 @@ function App() {
     <div className="bg-(--color-white)">
       <Title />
       <AboutMe />
-      <Skills />
+      {/* <Skills /> */}
     </div>
   );
 }
