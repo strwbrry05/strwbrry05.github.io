@@ -1,5 +1,5 @@
 import React from "react";
-import js from "../assets/bookJs.png";
+import js from "../../public/bookJs.png";
 import node from "../assets/bookNode.png";
 import css from "../assets/bookCss.png";
 import html from "../assets/bookHtml.png";
