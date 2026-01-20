@@ -1,5 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import jamBread from "../assets/jamBread.png";
+import bBread from "../assets/butterBread.png";
 
 const Contact = () => {
   const form = useRef();
@@ -38,11 +40,32 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex justify-center items-center mt-[4em] mb-[4em] text-(--color-white) ">
+    <div
+      className="flex justify-center items-center mt-[4em] mb-[4em] text-(--color-white) gap-x-[2em]
+    lg:gap-x-[4.75em]
+    "
+    >
+      <div className="hidden md:flex flex-col gap-y-[3em]">
+        <img
+          src={jamBread}
+          alt=""
+          className="lg:w-[140px] -rotate-20 md:w-[130px]"
+        />
+        <img
+          src={bBread}
+          alt=""
+          className="lg:w-[140px] rotate-20 md:w-[130px]"
+        />
+        <img
+          src={jamBread}
+          alt=""
+          className="lg:w-[140px] -rotate-20 md:w-[130px]"
+        />
+      </div>
       <div
         className="bg-(--color-blue) flex flex-col w-[300px] justify-center items-center pb-[2.5em] pt-[1em]
       
-      md:w-[500px]"
+      md:w-[375px] lg:w-[450px]"
       >
         <h2 className="font-(family-name:--font-titles) text-[2.5rem] mb-[0.75em]">
           get in touch!
@@ -104,7 +127,7 @@ const Contact = () => {
             type="submit"
             value="send"
             className="border-[2px] rounded-[10px] w-[150px] place-self-center h-[40px] mt-[0.75em]
-            text-[1.5rem] cursor-pointer"
+            text-[1.5rem] cursor-pointer active:bg-(--color-white) active:text-(--color-blue) "
           />
         </form>
         {sentMessage && (
@@ -112,6 +135,23 @@ const Contact = () => {
             your message has been sent!
           </p>
         )}
+      </div>
+      <div className="hidden md:flex flex-col gap-y-[3em]">
+        <img
+          src={jamBread}
+          alt=""
+          className="w-[130px] rotate-20 lg:w-[140px]"
+        />
+        <img
+          src={bBread}
+          alt=""
+          className="w-[130px] -rotate-20 lg:w-[140px]"
+        />
+        <img
+          src={jamBread}
+          alt=""
+          className="w-[130px] rotate-20 lg:w-[140px]"
+        />
       </div>
     </div>
   );
