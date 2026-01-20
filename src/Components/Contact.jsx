@@ -63,7 +63,7 @@ const Contact = () => {
           <div className="flex flex-col items-start justify-center mt-[1.5em] mb-[1em]">
             <label>message</label>
             <textarea
-              name="message"
+              name="user_message"
               className="border-[2px] border-(--color-white) border-dashed w-full p-[0.75em]"
               required
             />
