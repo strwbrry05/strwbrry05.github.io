@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
@@ -6,6 +6,12 @@ const Contact = () => {
   const serviceID = import.meta.env.VITE_SERVICE_ID;
   const templateID = import.meta.env.VITE_TEMPLATE_ID;
   const publicKey = import.meta.env.VITE_PUBLIC_KEY;
+
+  const [user_name, setName] = useState("");
+  const [user_email, setEmail] = useState("");
+  const [user_message, setMessage] = useState("");
+
+  const [sentMessage, setSentMessage] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -17,6 +23,10 @@ const Contact = () => {
       .then(
         () => {
           console.log("SUCCESS!");
+          setSentMessage(true);
+          setName("");
+          setEmail("");
+          setMessage("");
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -42,6 +52,8 @@ const Contact = () => {
             </label>
             <input
               type="text"
+              value={user_name}
+              onChange={(e) => setName(e.target.value)}
               name="user_name"
               className="border-b-[2px] border-b-(--color-white) border-dashed"
               required
@@ -54,6 +66,8 @@ const Contact = () => {
             </label>
             <input
               type="email"
+              value={user_email}
+              onChange={(e) => setEmail(e.target.value)}
               name="user_email"
               className="border-b-[2px] border-b-(--color-white) border-dashed "
               required
@@ -64,6 +78,8 @@ const Contact = () => {
             <label>message</label>
             <textarea
               name="user_message"
+              value={user_message}
+              onChange={(e) => setMessage(e.target.value)}
               className="border-[2px] border-(--color-white) border-dashed w-full p-[0.75em]"
               required
             />
@@ -72,9 +88,14 @@ const Contact = () => {
             type="submit"
             value="send"
             className="border-[2px] rounded-[10px] w-[150px] place-self-center h-[40px] mt-[0.75em]
-            text-[1.5rem]"
+            text-[1.5rem] cursor-pointer"
           />
         </form>
+        {sentMessage && (
+          <p className="font-(family-name:--font-funtext) text-[1.15rem] mt-[1em]">
+            your message has been sent!
+          </p>
+        )}
       </div>
     </div>
   );
