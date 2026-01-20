@@ -27,6 +27,9 @@ const Contact = () => {
           setName("");
           setEmail("");
           setMessage("");
+          setTimeout(() => {
+            setSentMessage(false);
+          }, 10000);
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -36,7 +39,11 @@ const Contact = () => {
 
   return (
     <div className="flex justify-center items-center mt-[4em] mb-[4em] text-(--color-white) ">
-      <div className="bg-(--color-blue) flex flex-col w-[300px] justify-center items-center pb-[2.5em] pt-[1em]">
+      <div
+        className="bg-(--color-blue) flex flex-col w-[300px] justify-center items-center pb-[2.5em] pt-[1em]
+      
+      md:w-[500px]"
+      >
         <h2 className="font-(family-name:--font-titles) text-[2.5rem] mb-[0.75em]">
           get in touch!
         </h2>
@@ -46,7 +53,10 @@ const Contact = () => {
           ref={form}
           onSubmit={sendEmail}
         >
-          <div className="flex items-center justify-center">
+          <div
+            className="flex items-center justify-center 
+          md:justify-start"
+          >
             <label className="border-b-[2px] border-b-(--color-white) border-dashed pr-[1em]">
               name:
             </label>
@@ -55,12 +65,16 @@ const Contact = () => {
               value={user_name}
               onChange={(e) => setName(e.target.value)}
               name="user_name"
-              className="border-b-[2px] border-b-(--color-white) border-dashed"
+              className="border-b-[2px] border-b-(--color-white) border-dashed
+              md:w-full"
               required
             />
           </div>
 
-          <div className="flex items-center justify-center mt-[1.5em]">
+          <div
+            className="flex items-center justify-center mt-[1.5em]
+          md:justify-start"
+          >
             <label className="border-b-[2px] border-b-(--color-white) border-dashed pr-[1em]">
               email:
             </label>
@@ -69,7 +83,8 @@ const Contact = () => {
               value={user_email}
               onChange={(e) => setEmail(e.target.value)}
               name="user_email"
-              className="border-b-[2px] border-b-(--color-white) border-dashed "
+              className="border-b-[2px] border-b-(--color-white) border-dashed 
+              md:w-full"
               required
             />
           </div>
@@ -80,7 +95,8 @@ const Contact = () => {
               name="user_message"
               value={user_message}
               onChange={(e) => setMessage(e.target.value)}
-              className="border-[2px] border-(--color-white) border-dashed w-full p-[0.75em]"
+              className="border-[2px] border-(--color-white) border-dashed w-full p-[0.75em] h-[120px]
+              md:h-[200px]"
               required
             />
           </div>
