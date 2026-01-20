@@ -19,7 +19,7 @@ const AboutMe = () => {
           <img className="w-[40px] h-[45px]" src={redPin} alt="" />
         </div>
         <div
-          className="font-bold text-[1.07rem] w-[75%] md:w-[500px]
+          className="font-bold text-[1.07rem] w-[80%] md:w-[500px]
         lg:text-[1.15rem]"
         >
           <p className="mb-[2em] tracking-tight">
