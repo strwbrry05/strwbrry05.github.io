@@ -45,7 +45,8 @@ const AboutMe = () => {
             className="bg-(--color-blue) text-(--color-white) font-semibold
           text-[1.15rem] mb-[1em] w-[125px] h-[40px] rounded-[10px] cursor-pointer
           hover:bg-sky-900 
-          active:outline-2 active:outline-(--color-blue) active:outline-offset-2 active:bg-(--color-blue)"
+          active:outline-2 active:outline-(--color-blue) active:outline-offset-2 active:bg-(--color-blue)
+          md:text-[1rem]"
           >
             resume
           </button>
@@ -53,7 +54,8 @@ const AboutMe = () => {
             className="bg-(--color-red) text-(--color-white) font-semibold
           text-[1.15rem] w-[125px] h-[40px] rounded-[10px] mb-[2em] cursor-pointer
           hover:bg-red-800 
-          active:outline-2 active:outline-(--color-red) active:outline-offset-2 active:bg-(--color-red)"
+          active:outline-2 active:outline-(--color-red) active:outline-offset-2 active:bg-(--color-red)
+          md:text-[1rem]"
           >
             contact
           </button>

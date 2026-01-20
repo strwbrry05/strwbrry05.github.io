@@ -62,6 +62,14 @@ const Skills = () => {
           alt="figma skill"
         />
       </div>
+      <div>
+        <p
+          className="font-(family-name:--font-funtext) font-bold w-[60%] justify-self-center text-[1.05rem]
+        mt-[1em]"
+        >
+          *could refamiliarize myself (if needed): java, python, mongodb, c#
+        </p>
+      </div>
     </div>
   );
 };
