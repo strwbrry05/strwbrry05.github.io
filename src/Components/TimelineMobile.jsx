@@ -8,7 +8,7 @@ const TimelineMobile = () => {
     </span>
   );
   return (
-    <div className="flex justify-center w-[375px]">
+    <div className="flex justify-center">
       {/* vert line */}
       <div className="w-[10%] flex justify-center items-center">
         <div className="w-[2px] h-[1250px] bg-(--color-white)"></div>

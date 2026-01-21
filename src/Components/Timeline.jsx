@@ -3,20 +3,17 @@ import TimelineCard from "./TimelineCard";
 import TimelineMobile from "./TimelineMobile";
 
 const Timeline = () => {
-  const timeline03Content = (
-    <span>
-      data structures <br /> peer instructor
-    </span>
-  );
   return (
-    <div className="bg-(--color-red)">
+    <div className="bg-(--color-red) flex flex-col justify-center items-center">
       <h2
         className="text-(--color-white) font-(family-name:--font-titles) 
-        text-[2.75rem] px-[0.5em] py-[0.5em] pt-[1em]"
+        text-[2.75rem] px-[0.5em] py-[0.5em] pt-[1em] self-start"
       >
         over the years...
       </h2>
-      <TimelineMobile />
+      <div className="flex justify-center items-center w-[365px]">
+        <TimelineMobile />
+      </div>
       {/* desktop/bigger screens */}
       <div></div>
     </div>
