@@ -80,7 +80,7 @@ const Contact = () => {
             className="flex items-center justify-center 
           md:justify-start"
           >
-            <label className="border-b-[2px] border-b-(--color-white) border-dashed">
+            <label className="border-b-[2px] border-b-(--color-white) border-dashed w-[100px]">
               name:
             </label>
             <input
@@ -88,7 +88,7 @@ const Contact = () => {
               value={user_name}
               onChange={(e) => setName(e.target.value)}
               name="user_name"
-              className="border-b-[2px] border-b-(--color-white) border-dashed
+              className="border-b-[2px] border-b-(--color-white) border-dashed w-[180px]
               md:w-full"
               required
             />
@@ -98,7 +98,7 @@ const Contact = () => {
             className="flex items-center justify-center mt-[1.5em]
           md:justify-start"
           >
-            <label className="border-b-[2px] border-b-(--color-white) border-dashed">
+            <label className="border-b-[2px] border-b-(--color-white) border-dashed w-[100px]">
               email:
             </label>
             <input
@@ -106,7 +106,7 @@ const Contact = () => {
               value={user_email}
               onChange={(e) => setEmail(e.target.value)}
               name="user_email"
-              className="border-b-[2px] border-b-(--color-white) border-dashed 
+              className="border-b-[2px] border-b-(--color-white) border-dashed w-[180px]
               md:w-full"
               required
             />
