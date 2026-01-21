@@ -80,7 +80,7 @@ const Contact = () => {
             className="flex items-center justify-center 
           md:justify-start"
           >
-            <label className="border-b-[2px] border-b-(--color-white) border-dashed pr-[1em]">
+            <label className="border-b-[2px] border-b-(--color-white) border-dashed">
               name:
             </label>
             <input
@@ -98,7 +98,7 @@ const Contact = () => {
             className="flex items-center justify-center mt-[1.5em]
           md:justify-start"
           >
-            <label className="border-b-[2px] border-b-(--color-white) border-dashed pr-[1em]">
+            <label className="border-b-[2px] border-b-(--color-white) border-dashed">
               email:
             </label>
             <input
