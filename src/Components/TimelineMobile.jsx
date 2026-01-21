@@ -14,7 +14,38 @@ const TimelineMobile = () => {
         <div className="w-[2px] h-[1250px] bg-(--color-white)"></div>
       </div>
       {/* obj */}
-      <div className="w-[80%]">
+      <div className="w-[90%]">
+        <div className="flex flex-col justify-center items-start">
+          <div className="flex justify-center items-center  ">
+            <div
+              className={`h-[0.5px] w-[75px] ml-[-.75em] border-dashed border-t-(--color-white) border-t-[2px]`}
+            ></div>
+            <div
+              className={`w-[60px] h-[60px] bg-(--color-white) rounded-[100%]
+          flex justify-center items-center`}
+            >
+              <p
+                className={`font-(family-name:--font-formal) font-bold text-(--color-red) text-[1.25rem]`}
+              >
+                01
+              </p>
+            </div>
+            <div
+              className={`text-(--color-white) font-bold leading-5 ml-[1em]`}
+            >
+              <h3>2020-2021</h3>
+              <h3>intro to sql tutor</h3>
+            </div>
+          </div>
+          <p
+            className={`text-[1rem] font-(family-name:--font-funtext) text-(--color-white) leading-5 mt-[.75em] mb-[1.5em]`}
+          >
+            Operated one-on-one and small group instruction for 20+ students,
+            indeveloping SQL comprehension and relational database skills.
+            Assisted students with complex coursework, including helping them
+            develop better study habits.
+          </p>
+        </div>
         {/* 01 */}
         <TimeLineCardMobile
           vW={85}
