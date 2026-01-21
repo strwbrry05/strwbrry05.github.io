@@ -1,6 +1,6 @@
 import React from "react";
-import TimelineCard from "./TimelineCard";
 import TimelineMobile from "./TimelineMobile";
+import TimelineDesktop from "./TimelineDesktop";
 
 const Timeline = () => {
   return (
@@ -13,11 +13,13 @@ const Timeline = () => {
         >
           over the years...
         </h2>
-        <div className="flex justify-center items-center w-[365px] mb-[5em] self-center">
+        <div className="lg:hidden flex justify-center items-center w-[365px] mb-[5em] self-center">
           <TimelineMobile />
         </div>
         {/* desktop/bigger screens */}
-        <div></div>
+        <div>
+          <TimelineDesktop />
+        </div>
       </div>
     </div>
   );

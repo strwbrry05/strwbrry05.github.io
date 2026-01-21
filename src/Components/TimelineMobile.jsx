@@ -1,5 +1,4 @@
 import React from "react";
-import TimeLineCardMobile from "./TimeLineCardMobile";
 
 const TimelineMobile = () => {
   const timeline03Content = (
