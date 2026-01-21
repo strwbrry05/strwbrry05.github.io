@@ -101,7 +101,7 @@ const TimelineMobile = () => {
               className={`text-(--color-white) font-bold leading-5 ml-[1em]`}
             >
               <h3>2023-2024</h3>
-              <h3>timeline03Content</h3>
+              <h3>{timeline03Content}</h3>
             </div>
           </div>
           <p
