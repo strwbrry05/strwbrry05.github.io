@@ -64,8 +64,8 @@ const Skills = () => {
       </div>
       <div>
         <p
-          className="font-(family-name:--font-funtext) font-bold w-[60%] justify-self-center text-[1.05rem]
-        mt-[1em] bg-blue-200"
+          className="font-(family-name:--font-funtext) font-bold justify-self-center text-[1.05rem]
+        mt-[1em]"
         >
           *could refamiliarize myself with (if needed): <br></br> java, python,
           mongodb, c#
