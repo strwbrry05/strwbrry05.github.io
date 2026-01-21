@@ -11,7 +11,7 @@ const Timeline = () => {
       >
         over the years...
       </h2>
-      <div className="flex justify-center items-center w-[365px]">
+      <div className="flex justify-center items-center w-[365px] mb-[5em]">
         <TimelineMobile />
       </div>
       {/* desktop/bigger screens */}
