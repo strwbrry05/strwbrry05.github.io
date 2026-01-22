@@ -120,7 +120,7 @@ const TimelineMobile = () => {
               className={`h-[0.5px] w-[50px] ml-[-.75em] border-dashed border-t-(--color-white) border-t-[2px]`}
             ></div>
             <div
-              className={`w-[75px] h-[75px] bg-(--color-white) rounded-[100%]
+              className={`w-[70px] h-[60px] bg-(--color-white) rounded-[100%]
           flex justify-center items-center`}
             >
               <p
