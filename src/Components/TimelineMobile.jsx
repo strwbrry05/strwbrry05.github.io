@@ -33,7 +33,7 @@ const TimelineMobile = () => {
             <div
               className={`text-(--color-white) font-bold leading-5 ml-[1em]`}
             >
-              <h3>2020-2021</h3>
+              <h3>2021-2022</h3>
               <h3>intro to sql tutor</h3>
             </div>
           </div>
