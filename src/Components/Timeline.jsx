@@ -13,11 +13,12 @@ const Timeline = () => {
         >
           over the years...
         </h2>
+        {/* mobile amd tablet screens */}
         <div className="lg:hidden flex justify-center items-center w-[365px] mb-[5em] self-center">
           <TimelineMobile />
         </div>
         {/* desktop/bigger screens */}
-        <div>
+        <div className="hidden lg:block">
           <TimelineDesktop />
         </div>
       </div>

@@ -7,7 +7,7 @@ const TimelineDesktop = () => {
     </span>
   );
   return (
-    <div className="pb-[1em] ">
+    <div className="pb-[2em] ">
       {/* vert line */}
       <div className="">
         <div className="h-[2px] w-[fullpx] bg-(--color-white)"></div>
