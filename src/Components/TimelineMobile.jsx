@@ -40,8 +40,8 @@ const TimelineMobile = () => {
           <p
             className={`text-[1rem] font-(family-name:--font-funtext) text-(--color-white) leading-5 mt-[.75em] mb-[1.5em]`}
           >
-            Operated one-on-one and small group instruction for 20+ students,
-            indeveloping SQL comprehension and relational database skills.
+            Operated one-on-one and small group instruction for 20+ students, in
+            developing SQL comprehension and relational database skills.
             Assisted students with complex coursework, including helping them
             develop better study habits.
           </p>
