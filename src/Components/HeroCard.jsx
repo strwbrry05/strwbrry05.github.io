@@ -4,7 +4,7 @@ const HeroCard = (props) => {
   return (
     <div
       className={`font-(family-name:--font-text) text-(--color-gray)
-    ${props.isReverse ? "flex-row-reverse" : ""} flex `}
+    ${props.isReverse ? "flex-row-reverse" : ""} flex w-[325px] cursor-pointer hover:text-black`}
     >
       <div
         className={` ${props.isTitleReverse ? "flex-col-reverse" : "flex-col"} flex  justify-center items-center w-[30%]`}
