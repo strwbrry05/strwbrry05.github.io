@@ -8,7 +8,7 @@ const Hero = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div className=" flex flex-col justify-center items-center">
+    <div className=" flex flex-col justify-center items-center pb-[1em]">
       {/* mobile/tablet view */}
       <div
         className="w-[360px] flex flex-col gap-y-[1.5em]

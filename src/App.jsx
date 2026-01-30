@@ -8,12 +8,14 @@ import Timeline from "./Components/Timeline";
 import Footer from "./Components/Footer";
 import Contact from "./Components/Contact";
 import Hero from "./Components/Hero";
+import Projects from "./Components/Projects";
 
 function App() {
   return (
     <div className="bg-(--color-white)">
       <Title />
       <Hero />
+      <Projects />
       <AboutMe />
       <Skills />
       <Timeline />
