@@ -9,10 +9,14 @@ import Footer from "./Components/Footer";
 import Contact from "./Components/Contact";
 import Hero from "./Components/Hero";
 import Projects from "./Components/Projects";
+import Nav from "./Components/Nav";
 
 function App() {
   return (
     <div className="bg-(--color-white)">
+      <div className="pb-[3.5em]">
+        <Nav />
+      </div>
       <Title />
       <Hero />
       <Projects />
