@@ -2,6 +2,7 @@ import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { Link } from "react-scroll";
 
 const Footer = () => {
   return (
@@ -23,7 +24,9 @@ const Footer = () => {
           <a href="https://github.com/strwbrry05" target="_blank">
             <FaGithub className="text-[45px] cursor-pointer" />
           </a>
-          <MdEmail className="text-[50px] cursor-pointer" />
+          <Link to="contact" smooth={true} offset={-100}>
+            <MdEmail className="text-[50px] cursor-pointer" />
+          </Link>
         </div>
         <div
           className="font-(family-name:--font-titles) text-[3rem] leading-6

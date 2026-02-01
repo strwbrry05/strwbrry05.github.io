@@ -3,6 +3,7 @@ import me1 from "../assets/aboutMe1.png";
 import me2 from "../assets/aboutMe2.png";
 import me3 from "../assets/aboutMe3.png";
 import redPin from "../assets/redPin.png";
+import { Link } from "react-scroll";
 
 const AboutMe = () => {
   return (
@@ -50,15 +51,17 @@ const AboutMe = () => {
           >
             resume
           </button>
-          <button
-            className="bg-(--color-red) text-(--color-white) font-semibold
+          <Link to="contact" smooth={true} offset={-80}>
+            <button
+              className="bg-(--color-red) text-(--color-white) font-semibold
           text-[1.15rem] w-[125px] h-[40px] rounded-[10px] mb-[2em] cursor-pointer
           hover:bg-red-800 
           active:outline-2 active:outline-(--color-red) active:outline-offset-2 active:bg-(--color-red)
           md:text-[1rem]"
-          >
-            contact
-          </button>
+            >
+              contact
+            </button>
+          </Link>
         </div>
       </div>
 
