@@ -13,3 +13,21 @@
     --color-white: #f5ebe0ff;
     --color-gray: #c0b7b1ff;
 }
+
+/* NAV BAR */
+.nav-rotated {
+    font-size: 1.5rem;
+    /* margin-right: 0.75em; */
+    cursor: pointer;
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+
+}
+
+.nav-not-rotated {
+    font-size: 1.5rem;
+    /* margin-right: 0.75em; */
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+}
