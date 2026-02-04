@@ -43,7 +43,7 @@ const AboutMe = () => {
           className="flex flex-col items-start mt-[2em]
         font-(family-name:--font-formal)"
         >
-          <a href={resume} download target="_blank">
+          <a href={resume} download={"MolinaJacqueline"} target="_blank">
             <button
               className="bg-(--color-blue) text-(--color-white) font-semibold
           text-[1.15rem] mb-[1em] w-[125px] h-[40px] rounded-[10px] cursor-pointer
