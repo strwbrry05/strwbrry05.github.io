@@ -48,7 +48,7 @@ const Nav = () => {
             className={isRotated ? "nav-rotated" : "nav-not-rotated"}
             onClick={handleClick}
           />
-          <a href={resume} download target="_blank">
+          <a href={resume} download={"MolinaJacqueline"} target="_blank">
             <button
               className="mr-[2em] border-[2px] rounded-[10px] border-(--color-yellow) px-[0.75em] py-[0.15em] cursor-pointer
                 active:bg-sky-900 font-semibold bg-(--color-blue)"
@@ -269,7 +269,7 @@ const Nav = () => {
                 <li>contact</li>
               </Link>
             </ul>
-            <a href={resume} download target="_blank">
+            <a href={resume} download={"MolinaJacqueline"} target="_blank">
               <button
                 className="mr-[2em] border-[2px] rounded-[10px] border-(--color-yellow) px-[0.75em] py-[0.15em] cursor-pointer
                 active:bg-sky-900 font-semibold"
