@@ -13,10 +13,16 @@ const HomePage = () => {
       <Element name="hero">
         <Hero />
       </Element>
-      <Projects />
-      <AboutMe />
+      <Element name="projects">
+        <Projects />
+      </Element>
+      <Element name="about">
+        <AboutMe />
+      </Element>
       <Skills />
-      <Timeline />
+      <Element name="timeline">
+        <Timeline />
+      </Element>
       <Element name="contact">
         <Contact />
       </Element>

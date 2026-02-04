@@ -4,6 +4,7 @@ import me2 from "../assets/aboutMe2.png";
 import me3 from "../assets/aboutMe3.png";
 import redPin from "../assets/redPin.png";
 import { Link } from "react-scroll";
+import resume from "../assets/files/MolinaJacqueline.pdf";
 
 const AboutMe = () => {
   return (
@@ -42,15 +43,17 @@ const AboutMe = () => {
           className="flex flex-col items-start mt-[2em]
         font-(family-name:--font-formal)"
         >
-          <button
-            className="bg-(--color-blue) text-(--color-white) font-semibold
+          <a href={resume} download target="_blank">
+            <button
+              className="bg-(--color-blue) text-(--color-white) font-semibold
           text-[1.15rem] mb-[1em] w-[125px] h-[40px] rounded-[10px] cursor-pointer
           hover:bg-sky-900 
           active:outline-2 active:outline-(--color-blue) active:outline-offset-2 active:bg-(--color-blue)
           md:text-[1rem]"
-          >
-            resume
-          </button>
+            >
+              resume
+            </button>
+          </a>
           <Link to="contact" smooth={true} offset={-80}>
             <button
               className="bg-(--color-red) text-(--color-white) font-semibold

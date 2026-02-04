@@ -28,15 +28,17 @@ const Footer = () => {
             <MdEmail className="text-[50px] cursor-pointer" />
           </Link>
         </div>
-        <div
-          className="font-(family-name:--font-titles) text-[3rem] leading-6
+        <Link to="title" offset={-100} smooth={true} className="cursor-pointer">
+          <div
+            className="font-(family-name:--font-titles) text-[3rem] leading-6
       flex flex-col justify-center items-center mb-[0.5em] 
       
       lg:mb-[0em]"
-        >
-          <h4>jacqueline</h4>
-          <h4>molina</h4>
-        </div>
+          >
+            <h4>jacqueline</h4>
+            <h4>molina</h4>
+          </div>
+        </Link>
         <p
           className="text-(--color-gray) font-(family-name:--font-formal) font-semibold 
       lg:hidden"
@@ -50,16 +52,35 @@ const Footer = () => {
           <div className="">
             {/* LINK TO APPR PLACES ON PAGE!! */}
             <ul className="flex flex-col gap-y-[5px]">
-              <li>Home</li>
-              <li>Projects</li>
-              <li>Designs</li>
+              <Link to="title" offset={-100} smooth={true}>
+                <li className="cursor-pointer hover:text-(--color-white)">
+                  Home
+                </li>
+              </Link>
+              <Link to="projects" offset={-50} smooth={true}>
+                <li className="cursor-pointer hover:text-(--color-white)">
+                  Projects
+                </li>
+              </Link>
+              <Link to="about" offset={-70} smooth={true}>
+                <li className="cursor-pointer hover:text-(--color-white)">
+                  AboutMe
+                </li>
+              </Link>
             </ul>
           </div>
           <div className="">
             <ul className="flex flex-col gap-y-[5px]">
-              <li>AboutMe</li>
-              <li>TimeLine</li>
-              <li>Contact</li>
+              <Link to="timeline" offset={-70} smooth={true}>
+                <li className="cursor-pointer hover:text-(--color-white)">
+                  Timeline
+                </li>
+              </Link>
+              <Link to="contact" offset={-100} smooth={true}>
+                <li className="cursor-pointer hover:text-(--color-white)">
+                  Contact
+                </li>
+              </Link>
             </ul>
           </div>
         </div>
